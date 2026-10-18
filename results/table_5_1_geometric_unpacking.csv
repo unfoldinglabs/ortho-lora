@@ -1,0 +1,4 @@
+Model / Method,Coherence C_gram (↓),Mean FPR (↓),Effective Dim d_eff (↑),Task Loss (Test)
+Base Model (Unadapted),N/A (No Adapter),N/A,N/A,3.5819
+Standard LoRA,0.7188,0.7035,18.40 / 32,0.5894
+Ortho-LoRA (Ours),0.0696,0.5248,28.05 / 32,0.6365

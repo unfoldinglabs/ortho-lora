@@ -1,0 +1,5 @@
+Architecture / Paradigm,Intervention Type,Params Overhead,Test Task Loss (↓),Forward Latency (ms) (↓),SAE Subspace Match (↑)
+Unadapted Base Model,None (Dense),0,3.6417,88.51,N/A
+Top-K SAE Bottleneck,Exogenous Probe (Recon),"6,427,008",14.9443,108.81,1.0000 (Self)
+Standard LoRA,Endogenous (Entangled),"57,344",0.5887,101.77 (0 if merged),0.1227
+Ortho-LoRA (Ours),Endogenous (Monosemantic),"57,344",0.6580,68.68 (0 if merged),0.1227

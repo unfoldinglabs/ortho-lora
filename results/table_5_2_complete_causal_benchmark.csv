@@ -1,0 +1,4 @@
+Method / Intervention,Steering Space,Peak Selectivity (SSI) (↑),Mean Collateral KL (↓),Max Target Prob Shift
+Base Model (CAA / RepE),Residual Stream (R^d),0.291,1.1020,0.0000
+Standard LoRA,Bottleneck Rank #20 (R^r),2.709,0.0689,0.1104
+Ortho-LoRA (Ours),Bottleneck Rank #12 (R^r),3.837,0.0676,0.1673

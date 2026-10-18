@@ -1,0 +1,3 @@
+Method,Params,Memory (FP16 KB),Latency Overhead
+Ortho-LoRA (rank=32),57344,112.0,0 ms (if merged)
+"Top-K SAE (4x, k=32)",6427008,12552.75,+ 2 MatMuls / layer
