@@ -283,7 +283,7 @@ To evaluate whether endogenous orthogonalization achieves genuine monosemanticit
 
 \begin{figure*}[t!]
     \centering
-    \includegraphics[width=\linewidth]{figures/fig_4_3_sae_training_and_geometry.png}
+    \includegraphics[width=\linewidth]{figures/fig_4_3_sae_training_and_geometry.pdf}
     \caption{\textbf{Top-$K$ SAE Baseline Training and Latent Geometry.} Evaluated on \texttt{Qwen-2.5-0.5B} ($d_{\text{model}} = 896$) at Layer 12 on \texttt{tweet\_eval}. \textbf{(a)} Reconstruction convergence measured by Fraction of Variance Unexplained (FVU), dropping below 0.01 within 200 optimization steps. \textbf{(b)} Active latent sparsity strictly adhering to target $k=32$ ($L_0$ norm). \textbf{(c)} Cross-coherence heatmap of the exogenous decoder dictionary $\bm{W}_{\text{dec}}$, showing baseline pairwise interference ($|\cos\theta| \in [0.02, 0.14]$) across latent directions.}
     \label{fig:sae_baseline}
 \end{figure*}
@@ -357,7 +357,7 @@ To determine whether the attribution-conditioned loss eliminates representationa
 
 \begin{figure*}[t!]
     \centering
-    \includegraphics[width=\linewidth]{figures/fig_5_1_geometric_unpacking_and_spaces.png}
+    \includegraphics[width=\linewidth]{figures/fig_5_1_geometric_unpacking_and_spaces.pdf}
     \caption{\textbf{Geometric and Activation Unpacking in the Adapted Subspace.} Evaluated on \texttt{Qwen-2.5-0.5B} ($r=32$, Layer 12). 
     \textbf{Top Left (Gram Heatmaps):} Standard LoRA exhibits severe off-diagonal cross-talk ($\mathcal{C}_{\text{gram}} = 0.719$), whereas Ortho-LoRA achieves near-complete directional decorrelation ($\mathcal{C}_{\text{gram}} = 0.070$). 
     \textbf{Top Right (Weight Space PCA):} Feature write-directions $\bm{b}_k$ in Standard LoRA collapse into degenerate clusters; Ortho-LoRA vectors unpack isotropically. 
@@ -390,7 +390,7 @@ Mechanistic interpretability requires causal verification: intervening on a sing
 
 \begin{figure*}[t!]
     \centering
-    \includegraphics[width=\linewidth]{figures/fig_5_2_complete_causal_steering.png}
+    \includegraphics[width=\linewidth]{figures/fig_5_2_complete_causal_steering.pdf}
     \caption{\textbf{Causal Activation Steering and Specificity Pareto Frontier.} Evaluated on \texttt{Qwen-2.5-0.5B} across the test split of \texttt{tweet\_eval}.
     \textbf{(a) Target Concept Response:} Ortho-LoRA (Rank 12) displays a monotonic, linear steering response reaching $\Delta P(y_{\text{pos}}) = +0.1673$ at $\gamma=+6$. Standard LoRA plateaus at $+0.1104$, while Base Model CAA exhibits collapse for $\gamma > 1$.
     \textbf{(b) Collateral Drift:} Off-target vocabulary divergence ($\mathcal{D}_{\text{KL}}$) under Ortho-LoRA and Standard LoRA remains minimal ($\le 0.22$), whereas Base Model CAA explodes beyond $3.2$.
